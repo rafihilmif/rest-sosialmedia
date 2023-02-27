@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "b62871a9-5b98-4139-b9ec-c07a77031a7b",
+		"name": "Sosial Media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "posses",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						},
+						{
+							"key": "nama",
+							"value": "vargpvnk",
+							"type": "default"
+						},
+						{
+							"key": "alamat",
+							"value": "ssss",
+							"type": "default"
+						},
+						{
+							"key": "nohp",
+							"value": "12345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "varg",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Profile",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nama",
+							"value": "voldemort",
+							"type": "default"
+						},
+						{
+							"key": "oldpassword",
+							"value": "123",
+							"type": "default"
+						},
+						{
+							"key": "newpassword",
+							"value": "321",
+							"type": "default"
+						},
+						{
+							"key": "alamat",
+							"value": "a",
+							"type": "default"
+						},
+						{
+							"key": "nohp",
+							"value": "123",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/user/varg",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"varg"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
